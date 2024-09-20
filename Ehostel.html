@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+            margin-bottom: 0px;
+        }
+        h1 .color1{
+            color: darkslategray;
+        }
+        h1 .color2{
+            color: orangered;
+        }
+        p{
+            font-size: small;
+            color: dimgray;
+            display: flex;
+            margin-top: 0px;
+            margin-left: 40px;
+        }
+        ul{
+            list-style-type: none;
+            margin-left: 180px;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        li{
+            display: flex;
+            float: left;
+            margin-top: 20px;
+            /* margin-left: 30px; */
+            padding-left: 30px;
+            padding-right: 0;
+            font-size: 15px;
+        }
+        .main{
+            display: flex;
+            background-color: white;
+            height: 100px;
+            /* position: fixed; */
+        }
+      .icon{
+        font-size: 40px;
+        color: gray;
+      }
+      /* .square{
+        color: orangered;
+        padding-right:0;
+      } */
+      .submain{
+        height: 485px;
+        width: 500px;
+        background-color: orangered;
+        /* padding-top: 1px; */
+        padding-left: 30px;
+        display: flex;
+       }
+      h1 .book{
+        color: white;
+        font-weight:bolder;
+      }
+      h1 .hostel{
+        color: white;
+        font-weight:lighter;
+      }
+      .submain h1{
+         padding-top: 20px;
+      }
+      .submain select{
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 250px;
+        height: 40px;
+        margin-bottom: 10px;
+        color: dimgray;
+      }
+  
+      /* .submain input{
+        padding-right: 225px;
+        padding-left: 10px;
+        height: 40px;
+        margin-bottom: 10px;
+        color: dimgray;
+      } */
+      div button{
+        margin-top: 25px;
+        padding: 10px 25px;
+        background-color: orangered;
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      img{
+        /* display: flex; */
+        height: 485px;
+        width: 730px;
+        /* float: right; */
+        margin-left: 80px;
+        padding: 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div>
+        <!-- <i class="fa-solid fa-location-dot"></i> -->
+       <h1>
+        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="color1">E-</span><span class="color2">HOSTEL</span>
+       </h1>
+       <P>ONLINE HOSTEL MANAGEMENT SYSTEM</P>
+       </div>
+       <div>
+       <ul>
+        <!-- <li class="square"><i class="fa-solid fa-share-from-square"></i></li> -->
+        <li><i class="fa-solid fa-share-from-square" style="color: orangered; margin-right: 5px;"></i><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">PHOTOS</a></li>
+        <li><a href="#">BOOKING</a></li>
+        <li><a href="#">CONTACT</a></li>
+       </ul>
+       </div>
+    </div>
+    <div class="submain">
+        <div>
+        <h1>
+            <span class="book">BOOK</span><span class="hostel"> A HOSTEL</span>
+        </h1>
+        <select >
+             <option value="disabled" disabled selected>Select a Hostel</option>
+             <option>Hostel 1</option>
+             <option>Hostel 2</option>
+             <option>Hostel 3</option>
+             <option>Hostel 4</option>
+        </select><br>
+        <!-- <input type="date" placeholder="Select Date" style="padding-right: 270px;"><br>
+        <input type="number" placeholder="Number of days"><br> -->
+        <select style="padding-right: 260px;">
+          <option value="select date" disabled selected>Select a Date</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+       </select>
+       <select style="padding-right: 245px;">
+        <option value="no of days" disabled selected > Number of Days</option>
+        <option>1-5</option>
+        <option>5-10</option>
+        <option>15-20</option>
+       </select>
+    
+        <button type="submit">BOOK NOW </button>
+       <i class="fa-solid fa-share-from-square" style="color: white; font-size: 30px;"></i>
+       </div>
+       <div>
+        <img src="hostelimage.jpg" alt="">
+       </div>
+    </div>
+   
+</body>
+</html>
